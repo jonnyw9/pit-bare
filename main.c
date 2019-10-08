@@ -16,6 +16,7 @@ void PIT1_IRQHandler(void);
 int main(void)
 {
     blue_init();
+    red_init();
     PIT_init();
     while (true) {
     }
