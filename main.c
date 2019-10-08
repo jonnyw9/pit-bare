@@ -75,7 +75,7 @@ void PIT_init(void) {
 
     PIT_LDVAL_REG(PIT, 1) = 11999999;
 
-    PIT_TCTRL_REG(PIT, 1) |= PIT TCTRL_TIE_MASK;
+    PIT_TCTRL_REG(PIT, 1) |= PIT_TCTRL_TIE_MASK;
     NVIC_EnableIRQ(PIT1_IRQn);
     
     /* Start the timer running */
